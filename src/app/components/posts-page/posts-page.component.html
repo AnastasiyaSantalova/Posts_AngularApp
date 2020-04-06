@@ -1,1 +1,2 @@
-<app-post-create></app-post-create>
+<app-post-create (addPost)="onAddPost($event)"></app-post-create>
+<app-post-list [posts]="posts"></app-post-list>
