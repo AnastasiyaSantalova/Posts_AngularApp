@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
@@ -15,6 +16,7 @@ import { PostCreateComponent } from './components/post-create/post-create.compon
 import { PostListComponent } from './components/post-list/post-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClient } from 'selenium-webdriver/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
