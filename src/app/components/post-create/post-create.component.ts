@@ -39,6 +39,7 @@ export class PostCreateComponent implements OnInit {
 
   onAddPost(): void {
     const newPost: Post = {
+      id: null,
       title: this.title.value,
       content: this.content.value,
     };

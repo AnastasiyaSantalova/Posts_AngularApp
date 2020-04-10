@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Post } from 'src/app/domain/Post';
 
 @Component({
@@ -6,12 +6,11 @@ import { Post } from 'src/app/domain/Post';
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.scss']
 })
-export class PostListComponent implements OnInit {
+export class PostListComponent {
   @Input() posts: Post[] = [];
+  @Output() deletePost: EventEmitter<string> = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit() {
+  onDelete(id) {
+    this.deletePost.emit(id);
   }
-
 }
