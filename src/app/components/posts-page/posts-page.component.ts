@@ -18,13 +18,8 @@ export class PostsPageComponent implements OnInit {
 
   getAllPosts(): void {
     this.postsService.getPosts().subscribe(data => {
-      console.log(data);
       this.posts = data;
     });
-  }
-
-  onAddPost(post: Post) {
-    this.postsService.addPost(post);
   }
 
   onDeletePost(id) {
