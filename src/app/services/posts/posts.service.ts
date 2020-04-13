@@ -39,6 +39,10 @@ export class PostsService {
     return this.postsUpdated.asObservable();
   }
 
+  getPost(id: string) {
+
+  }
+
   addPost(post: Post): void {
     this.http.post<{ message: string, postId: string }>(this.url, post).subscribe(data => {
       post.id = data.postId;

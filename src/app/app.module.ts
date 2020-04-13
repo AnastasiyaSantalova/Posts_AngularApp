@@ -18,6 +18,7 @@ import { PostListComponent } from './components/post-list/post-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PostCreatePageComponent } from './components/post-create-page/post-create-page.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PostCreatePageComponent } from './components/post-create-page/post-crea
     HeaderComponent,
     FooterComponent,
     PostCreatePageComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,9 @@ const cors = require('cors');
 
 const Post = require('./models/post');
 
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useUnifiedTopology', true);
+
 const app = express();
 mongoose.connect('mongodb+srv://anastasiia:2GjAhRba7Uqnceri@cluster0-dmry3.mongodb.net/node-angular?retryWrites=true&w=majority')
   .then(() => {

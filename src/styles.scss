@@ -1,4 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'montserrat', Roboto, sans-serif;
+  font-weight: normal;
+}
+
+// FONTS
+
+@font-face {
+  font-family: 'baloopaaji';
+  src: url('../fonts/Baloo_Paaji_2/baloopaaji2-extrabold-webfont.woff2') format('woff2'),
+       url('../fonts/Baloo_Paaji_2/baloopaaji2-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat/montserrat-medium-webfont.woff2') format('woff2'),
+       url('../fonts/Montserrat/montserrat-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat/montserrat-thin-webfont.woff2') format('woff2'),
+       url('../fonts/Montserrat/montserrat-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat/montserrat-italic-webfont.woff2') format('woff2'),
+       url('../fonts/Montserrat/montserrat-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../fonts/Montserrat/montserrat-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat/montserrat-bolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/Montserrat/montserrat-bolditalic-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}

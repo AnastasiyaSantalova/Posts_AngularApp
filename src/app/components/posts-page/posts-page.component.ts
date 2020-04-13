@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { PostsService } from 'src/app/services/posts/posts.service';
 import { Post } from 'src/app/domain/Post';
 
@@ -18,11 +19,12 @@ export class PostsPageComponent implements OnInit {
 
   getAllPosts(): void {
     this.postsService.getPosts().subscribe(data => {
+      console.log(data);
       this.posts = data;
     });
   }
 
-  onDeletePost(id) {
+  onDeletePost(id: string): void {
     this.postsService.deletePost(id);
   }
 }
